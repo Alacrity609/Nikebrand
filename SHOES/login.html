@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoes</title>
+  <link rel="stylesheet" href="Login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-..." crossorigin="anonymous" />
+  <style>
+    /* Custom CSS for Login Container */
+    
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="LogoNike.png" class="logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#login" id="loginLink">Login</a></li> <!-- Updated Login link with ID -->
+        <li><a href="#" class="shop-icon"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="text-content">
+        <span class="title">Explore More</span>
+        <h1>Nike Shoes</h1>
+        <h2>Just Do It.</h2>
+        <p>Nike doesn't want to make a product for everyone; they want to make a product for champions.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+  <!-- Login Container -->
+  <div class="login-container" id="loginContainer">
+    <h2>Login</h2>
+    <form id="loginForm" action="#" method="POST">
+      <div class="input-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript for Login Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginLink = document.getElementById('loginLink');
+      const loginContainer = document.getElementById('loginContainer');
+
+      loginLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (loginContainer.style.display === 'none' || loginContainer.style.display === '') {
+          loginContainer.style.display = 'block';
+        } else {
+          loginContainer.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
