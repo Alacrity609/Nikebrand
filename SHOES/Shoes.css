@@ -39,8 +39,7 @@ nav {
 
 .logo {
   max-height: 120px;
-  width: 200px;
-  
+  width: 200px; 
 }
 
 nav ul {
@@ -57,10 +56,6 @@ nav ul li a {
   color: #e9e9f0;
   position: relative;
   padding: 0.5rem 2rem;
-}
-
-nav ul li a:hover {
-  color: #fd4766;
 }
 
 nav ul li a:after {
@@ -81,7 +76,6 @@ nav ul li a:hover:after {
 .image-container {
   width: 30%;
   margin-bottom: 0;
-  
   position: fixed;
   display: block;
 }
@@ -95,9 +89,7 @@ nav ul li a:hover:after {
   margin: 0px 250px -10px 900px;
 }
 
-.image-container:hover .content-image {
-  filter: invert(100%);
-}
+
 
 .image-container-copy {
   opacity: 0.3;
@@ -238,3 +230,52 @@ nav ul li a:hover:after {
     padding: 1rem 3rem;
   }
 }
+
+ /* Custom CSS for Login Container */
+
+
+.login-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* log in end */

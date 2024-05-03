@@ -78,6 +78,7 @@ nav ul li a:hover:after {
   width: 100%;
 }
 
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +87,7 @@ nav ul li a:hover:after {
 }
 
 .product-item {
-  width: 30%;
+  width: 20%;
   padding: 1rem;
   box-sizing: border-box;
   text-align: center;
@@ -109,7 +110,7 @@ nav ul li a:hover:after {
 .product-item {
   margin-top: 0.5rem;
   color: #e3dcdc;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
